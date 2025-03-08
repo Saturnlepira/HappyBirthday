@@ -1,18 +1,6 @@
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Sederhana</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-    </style>
-</head>
+<!DOCTYPE HTML>
+<html>
 <body>
-    <h1>Selamat Datang!</h1>
-    <p>Ini adalah halaman web sederhana menggunakan HTML.</p>
+<img src="https://takenupload.com/67cc04118729c">
 </body>
 </html>
