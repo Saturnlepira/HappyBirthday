@@ -1,6 +1,6 @@
 
 <html>
 <body>
-<marquee><p>kanan kiri</p></marquee>
+<marquee direction="right"><p>======D</p></marquee>
 </body>
 </html>
