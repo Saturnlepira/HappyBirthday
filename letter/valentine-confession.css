@@ -83,36 +83,55 @@ body {
 }
 
 .reset {
-	text-align: center;
-	margin-top: 100px;
-  }
-  
-  .reset button {
-	font-weight: 800;
-	font-style: normal;
-	transition: all 0.1s linear;
-	-webkit-appearance: none;
-	background-color: transparent;
-	border: solid 2px #d9534f;
-	border-radius: 4px;
-	color: #d9534f;
-	display: inline-block;
-	font-size: 14px;
-	text-transform: uppercase;
-	margin: 5px;
-	padding: 10px;
-	line-height: 1em;
-	text-decoration: none;
-	min-width: 120px;
-	cursor: pointer;
-  }
-  
-  .reset button:hover {
-	background-color: #d9534f;
-	color: #fff;
-  }  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
 
-  
+.btn {
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: solid 2px #d9534f;
+    border-radius: 4px;
+    color: #d9534f;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px 20px;
+    line-height: 1em;
+    text-decoration: none;
+    min-width: 120px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .reset {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+
+
 .message .sincere{
 	text-align: left;
 	font-family: "Cinzel, serif";
