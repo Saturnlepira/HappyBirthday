@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://i.postimg.cc/26Csxd9F/Chat-GPT-Image-8-Mei-2025-02-04-35.png" type="image/png">
+  <title>FOTO-FOTO MONYET TERSAYANG</title>
+  <style>
+    body {
+      margin: 0;
+      background: pink;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+      font-family: sans-serif;
+    }
+
+    .moving-image {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      animation: float 4s ease-in-out infinite;
+      transition: transform 0.3s ease;
+      z-index: 100px;
+      height: 300px;
+    }
+
+    .moving-image:nth-child(2) { animation-delay: 1s; }
+    .moving-image:nth-child(3) { animation-delay: 2s; }
+    .moving-image:nth-child(4) { animation-delay: 3s; }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      position: absolute;
+      left: 50%;
+      top: 110%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      animation: floatHeart 8s linear infinite;
+      opacity: 0.7;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+   .bottom {
+    margin-bottom: 500px;
+    position: absolute;
+   }
+
+    @keyframes floatHeart {
+      0% {
+        transform: translateY(0) scale(1) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(0.5) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="bottom">Manusia Yang Paling Ku Sayang</h1>
+ 
+ 
+  <img src="https://i.postimg.cc/MHTXgS4H/213.png" class="moving-image" alt="Foto 1">
+  <img src="https://i.postimg.cc/gk1rt1Kc/Chat-GPT-Image-25-Apr-2025-01-01-49.png" class="moving-image" alt="Foto 2">
+  <img src="https://i.postimg.cc/xCs1vZC2/Chat-GPT-Image-18-Apr-2025-02-21-19.png" class="moving-image" alt="Foto 3">
+  <img src="https://i.postimg.cc/sgFD47Vv/Chat-GPT-Image-26-Apr-2025-00-06-44.png" class="moving-image" alt="Foto 4">
+
+  <!-- Banyak hati beterbangan -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDelay = Math.random() * 8 + 's';
+      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
+
