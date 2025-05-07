@@ -125,6 +125,19 @@
           font-size: 1.4em;
         }
       }
+button {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
     </style>
   </head>
   <body>
@@ -286,7 +299,18 @@
       <div class="text">
       <h1>happy birthday!</h1>
       <p class="name">To My Favorite Person</p>
-      <p><a href="https://buluketek.com/letter/ForSilvia.html">Click Here!</a></p>
-      </div>
+<button id="teks"onclick="document.getElementById('lagu').play()">CLICK HERE!</button>
+
+  <audio id="lagu">
+    <source src="https://buluketek.com/happy-birthday.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung pemutar audio.
+  </audio>
+  <script>
+    const teks = document.getElementById("teks");
+  
+    teks.addEventListener("click", function() {
+      teks.innerHTML = '<a href="https://buluketek.com/letter/ForSilvia.html" target="_blank">SURAT BUAT KAMU BUND</a>';
+    });
+  </script>
   </body>
 </html>
