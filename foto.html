@@ -72,10 +72,15 @@
       left: -10px;
       top: 0;
     }
-   .bottom {
-    margin-bottom: 500px;
-    position: absolute;
-   }
+  .bottom {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: darkred;
+  z-index: 200;
+}
 
     @keyframes floatHeart {
       0% {
@@ -87,6 +92,13 @@
         opacity: 0;
       }
     }
+@media (max-width: 600px) {
+  .moving-image {
+    width: 120px;
+    height: 180px;
+  }
+}
+
   </style>
 </head>
 <body>
