@@ -10,25 +10,30 @@
       margin: 0;
       background: pink;
       overflow: hidden;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
-      position: relative;
-      z-index: 1;
+      padding: 100px 20px 20px;
       font-family: sans-serif;
+      box-sizing: border-box;
+      position: relative;
     }
 
     .moving-image {
       width: 200px;
+      height: 300px;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       animation: float 4s ease-in-out infinite;
       transition: transform 0.3s ease;
-      z-index: 100px;
-      height: 300px;
+      z-index: 100;
+    }
+
+    .moving-image:hover {
+      transform: scale(1.05);
     }
 
     .moving-image:nth-child(2) { animation-delay: 1s; }
@@ -39,6 +44,20 @@
       0% { transform: translateY(0); }
       50% { transform: translateY(-20px); }
       100% { transform: translateY(0); }
+    }
+
+    .top-banner {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2em;
+      color: darkred;
+      text-align: center;
+      z-index: 200;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 15px;
     }
 
     .heart {
@@ -72,15 +91,6 @@
       left: -10px;
       top: 0;
     }
-  .bottom {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2em;
-  color: darkred;
-  z-index: 200;
-}
 
     @keyframes floatHeart {
       0% {
@@ -92,25 +102,28 @@
         opacity: 0;
       }
     }
-@media (max-width: 600px) {
-  .moving-image {
-    width: 120px;
-    height: 180px;
-  }
-}
 
+    @media (max-width: 600px) {
+      .moving-image {
+        width: 130px;
+        height: 190px;
+      }
+
+      .top-banner {
+        font-size: 1.3em;
+        padding: 8px 16px;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1 class="bottom">Manusia Yang Paling Ku Sayang</h1>
- 
- 
+  <h1 class="top-banner">Manusia Yang Paling Ku Sayang</h1>
+
   <img src="https://i.postimg.cc/MHTXgS4H/213.png" class="moving-image" alt="Foto 1">
   <img src="https://i.postimg.cc/gk1rt1Kc/Chat-GPT-Image-25-Apr-2025-01-01-49.png" class="moving-image" alt="Foto 2">
   <img src="https://i.postimg.cc/xCs1vZC2/Chat-GPT-Image-18-Apr-2025-02-21-19.png" class="moving-image" alt="Foto 3">
   <img src="https://i.postimg.cc/sgFD47Vv/Chat-GPT-Image-26-Apr-2025-00-06-44.png" class="moving-image" alt="Foto 4">
 
-  <!-- Banyak hati beterbangan -->
   <script>
     for (let i = 0; i < 30; i++) {
       const heart = document.createElement('div');
@@ -123,4 +136,3 @@
   </script>
 </body>
 </html>
-
